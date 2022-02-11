@@ -6,7 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -25,9 +27,8 @@ li.underline a {
   text-decoration: none;
   list-style: none;
   color: #ffffff !important;
-
 }
-.footer-list li{
+.footer-list li {
   margin-bottom: 0.25em;
 }
 
@@ -547,16 +548,13 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0;
+  font: 14px;
+  opacity: 0.2;
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
 
-.scrollToTop span {
-  margin-top: 6px;
-}
-
-.showScrollTop {
+a.scrollToTop:hover {
   font-size: 14px;
   opacity: 1;
 }
@@ -607,6 +605,7 @@ a[data-lightbox]:hover img {
 
 #lightbox-modal .modal-dialog img {
   max-height: 90vh;
+  width: 100%;
   margin: 0 auto;
 }
 
