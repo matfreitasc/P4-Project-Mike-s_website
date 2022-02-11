@@ -20,6 +20,20 @@ a:hover {
 .hidden {
   display: none;
 }
+li.underline,
+li.underline a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff !important;
+  line-height: 1.25em;
+}
+
+.quotation q {
+  font-size: 1.25em;
+}
+.quotation-tittle {
+  font-size: 1.2em !important;
+}
 
 #page-loading-blocs-notifaction {
   position: fixed;
@@ -96,12 +110,17 @@ a:hover {
 .texture-paper::before {
   background: url("img/texture-paper.png");
   background-size: 280px 280px;
+  z-index: 0;
 }
 .z-up {
   z-index: 5 !important;
 }
 .z-down {
   z-index: 1 !important;
+}
+.h1 {
+  font-size: 2em !important;
+  font-weight: bold !important;
 }
 .b-parallax {
   background-attachment: fixed;
@@ -837,10 +856,12 @@ h4 {
 
 .bg-atlanta-20made-20sign {
   background-image: url("img/atlanta_made_sign.webp");
+  z-index: 0;
 }
 
 .bg-atlanta-20made-20sign-20orange {
   background-image: url("img/atlanta_made_sign_orange.webp");
+  z-index: 0;
 }
 
 @media (max-width: 1024px) {
