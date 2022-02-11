@@ -25,7 +25,10 @@ li.underline a {
   text-decoration: none;
   list-style: none;
   color: #ffffff !important;
-  line-height: 1.25em;
+
+}
+.footer-list li{
+  margin-bottom: 0.25em;
 }
 
 .quotation q {
