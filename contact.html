@@ -25,7 +25,11 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/blocs.js"></script>
     <script src="./js/jquery.touchSwipe.js"></script>
-    <script src="./js/gmaps.js"></script>
+    <script
+      src="https://maps.google.com/maps/api/js?key=AIzaSyBsMINflQq45bGqKIAHmJ9V6_7Sm-fDtQc&maps_ids=7bfdc35a0d7d9150&callback=initMap"
+      async
+    ></script>
+    <script src="./js/scripts.js" async></script>
 
     <title>Go Mike Designs Contact Page</title>
 
@@ -110,65 +114,77 @@
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-              >
-                <div class="form-group">
-                  <label> Name </label>
-                  <input id="name" class="form-control" required />
-                </div>
-                <div class="form-group">
-                  <label> Email </label>
+              <form class="row needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
                   <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    required
+                    aria-describedby="NameInput"
+                  />
+
+                  <div class="invalid-feedback">What's your name?</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
                     id="email"
-                    class="form-control"
-                    type="email"
+                    aria-describedby="email-input"
                     required
                   />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label> How did you find me? </label>
+                <div class="mb-3">
+                  <label for="input_504" class="form-label"
+                    >How did you find me?</label
+                  >
                   <input
+                    type="text"
                     class="form-control"
-                    type="email"
-                    required
                     id="input_504"
+                    aria-describedby="find"
+                    required
                   />
                 </div>
-                <div class="form-group">
-                  <label>
+                <div class="mb-3">
+                  <label for="message" class="form-label">
                     Project brief (Please be as detailed as possible including
                     your company goals and any improvements you'd like to have
-                    over your current website)<br /> </label
-                  ><textarea
-                    id="message"
+                    over your current website)<br />
+                  </label>
+                  <textarea
                     class="form-control"
+                    id="message"
                     rows="4"
-                    cols="50"
                     required
                   ></textarea>
                 </div>
                 <button
-                  class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
                   type="submit"
+                  class="btn bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
                 >
-                  Let's go Mike
+                  Let's Go Mike
                 </button>
               </form>
             </div>
             <div class="col-sm-6">
-              <p>
-                mike@gomikedesigns.com<br />+1 (404) 555-1234<br />
-                <br />123 Peachtree Ave. Atlanta, GA<br />Available 9am–5pm,
-                Mon-Fri <br />
-                <br />Interested to learn about my freelace services?
-                <br />Please visit
-                <a class="ltc-atomic-tangerine" href="index.html">other page</a
-                >.
-              </p>
+              <div class="map-area">
+                <div id="map"></div>
+              </div>
+              123 Peachtree Ave. Atlanta, GA
+              <br />
+              <br />
+              mike@gomikedesigns.com<br />+1 (404) 555-1234<br />
+              <br />Available 9am–5pm, Mon-Fri <br />
+              <br />Interested to learn about my freelace services? <br />Please
+              visit
+              <a class="ltc-atomic-tangerine" href="index.html">other page</a>.
             </div>
           </div>
         </div>
