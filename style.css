@@ -34,9 +34,11 @@ li.underline a {
 
 .quotation q {
   font-size: 1.25em;
+  color: black;
 }
 .quotation-tittle {
   font-size: 1.2em !important;
+  color: black !important;
 }
 
 #page-loading-blocs-notifaction {
