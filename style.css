@@ -57,6 +57,11 @@ li.underline a {
   margin-top: 20px;
 }
 
+.img-size {
+  height: 276px;
+  width: 276px;
+}
+
 .bloc {
   width: 100%;
   clear: both;
@@ -334,7 +339,6 @@ li.underline a {
 
 .navbar-brand {
   height: auto;
-  padding: 3px 15px;
   font-size: 25px;
   font-weight: normal;
   font-weight: 600;
@@ -361,6 +365,7 @@ li.underline a {
   float: right;
   z-index: 1;
 }
+
 
 .nav > li {
   float: left;
@@ -622,10 +627,7 @@ a[data-lightbox]:hover img {
   padding: 20px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  bottom: 5px;
+  position: relative;
 }
 
 .close-lightbox {
@@ -671,9 +673,9 @@ a[data-lightbox]:hover img {
   left: 25px;
 }
 
-.snapshot-lb .modal-body {
+/* .snapshot-lb .modal-body {
   padding-bottom: 45px;
-}
+} */
 
 .snapshot-lb .lightbox-caption {
   padding: 0;
@@ -898,13 +900,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -923,8 +925,8 @@ h4 {
     position: relative;
   }
   .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
   }
   .bloc-group,
   .bloc-group .bloc {
@@ -934,8 +936,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
   }
 }
 

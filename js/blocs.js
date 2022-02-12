@@ -227,7 +227,7 @@ function setUpLightBox() {
         var e = targetLightbox.attr("data-lightbox"),
           i = targetLightbox.attr("data-autoplay"),
           a =
-            '<p class="lightbox-caption">' +
+            '<p class="lightbox-caption my-2">' +
             targetLightbox.attr("data-caption") +
             "</p>",
           o = "no-gallery-set",
@@ -240,7 +240,7 @@ function setUpLightBox() {
         var s = $(
           '<div id="lightbox-modal" class="modal fade"><div class="modal-dialog"><div class="modal-content ' +
             l +
-            ' blocs-lb-container"><button id="blocs-lightbox-close-btn" type="button" class="close-lightbox" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body"><a href="#" class="prev-lightbox" aria-label="prev"><span class="fa fa-chevron-left"></span></a><a href="#" class="next-lightbox" aria-label="next"><span class="fa fa-chevron-right"></span></a><img id="lightbox-image" class="img-responsive" src="' +
+            ' blocs-lb-container"><button id="blocs-lightbox-close-btn" type="button" class="close-lightbox" data-dismiss="modal" aria-label="Close" onclick="$(\'#lightbox-modal\').modal(\'hide\');"><span aria-hidden="true">&times;</span></button><div class="modal-body"><a href="#" class="prev-lightbox" aria-label="prev"><span class="fa fa-chevron-left"></span></a><a href="#" class="next-lightbox" aria-label="next"><span class="fa fa-chevron-right"></span></a><img id="lightbox-image" class="img-fluid" src="' +
             e +
             '"><div id="lightbox-video-container" class="embed-responsive embed-responsive-16by9"><video controls ' +
             n +
