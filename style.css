@@ -62,8 +62,9 @@ li.underline a {
   width: 276px;
 }
 .mikes-logo-size {
-  height: 174px;
-  width: 178.5px;
+  height: 178.5px;
+  width: 174px;
+  aspect-ratio: 0.97;
 }
 .bloc {
   width: 100%;
