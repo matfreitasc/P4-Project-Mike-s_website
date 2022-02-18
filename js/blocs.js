@@ -374,13 +374,13 @@ $(document).ready(function () {
     addKeyBoardSupport(),
     -1 != navigator.userAgent.indexOf("Safari") &&
       -1 == navigator.userAgent.indexOf("Chrome") &&
-      $("#page-loading-blocs-notifaction").remove();
+      $("#page-loading-blocs-notification").remove();
 }),
   $(window)
     .load(function () {
       setFillScreenBlocHeight(),
         animateWhenVisible(),
-        $("#page-loading-blocs-notifaction").remove();
+        $("#page-loading-blocs-notification").remove();
     })
     .resize(function () {
       setFillScreenBlocHeight();
