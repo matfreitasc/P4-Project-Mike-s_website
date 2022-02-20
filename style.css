@@ -19,6 +19,12 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+:focus,
+:focus-visible {
+  outline: 3px solid #696969cf !important;
+}
+
 .hidden {
   display: none;
 }
@@ -27,6 +33,7 @@ li.underline a {
   text-decoration: none;
   list-style: none;
   color: #ffffff !important;
+  width: fit-content;
 }
 .footer-list li {
   margin-bottom: 0.25em;
@@ -41,7 +48,7 @@ li.underline a {
   color: black !important;
 }
 
-#page-loading-blocs-notifaction {
+#page-loading-blocs-notification {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -750,7 +757,9 @@ p {
   max-width: 400px;
   margin: auto auto auto auto;
 }
-
+.social span {
+  color: white !important;
+}
 h2 {
   font-size: 22px;
   line-height: 1.4em;
