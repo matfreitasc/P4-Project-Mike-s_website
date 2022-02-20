@@ -317,6 +317,14 @@ function setUpLightBox() {
               $(".next-lightbox").show(),
             $('a[data-gallery-id="' + e + '"]').index(a) > 0 &&
               $(".prev-lightbox").show());
+    }),
+    $(document).keypress(function (e) {
+      if (e.keyCode === 27) {
+        $("#lightbox-modal").fadeOut(500);
+        //or
+        window.close();
+        $("#lightbox-modal").modal("hide");
+      }
     });
 }
 
