@@ -70,7 +70,6 @@ li.underline a {
 .mikes-logo-size {
   height: 178.5px;
   width: 174px;
-  aspect-ratio: 0.97;
 }
 .bloc {
   width: 100%;
@@ -145,10 +144,6 @@ li.underline a {
 }
 .z-down {
   z-index: 1 !important;
-}
-.h1 {
-  font-size: 1.5em !important;
-  font-weight: bold !important;
 }
 .b-parallax {
   background-attachment: fixed;
@@ -339,7 +334,7 @@ li.underline a {
 }
 
 #bloc-2-services p {
-  font-size: 11px;
+  font-size: 0.68em;
 }
 
 .navbar {
@@ -349,7 +344,7 @@ li.underline a {
 
 .navbar-brand {
   height: auto;
-  font-size: 25px;
+  font-size: 1.56em;
   font-weight: normal;
   font-weight: 600;
   line-height: 44px;
@@ -379,7 +374,7 @@ li.underline a {
 .nav > li {
   float: left;
   margin-top: 4px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -578,7 +573,7 @@ button {
 }
 
 a.scrollToTop:hover {
-  font-size: 14px;
+  font-size: 0.875em;
   opacity: 1;
 }
 
@@ -592,7 +587,7 @@ a[data-lightbox]:hover::before {
   content: "+";
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial;
-  font-size: 32px;
+  font-size: 2em;
   width: 50px;
   height: 50px;
   margin-left: -25px;
@@ -730,17 +725,12 @@ a {
 }
 
 p {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .tight-width-whitespace {
   max-width: 600px;
   margin: auto auto auto auto;
-}
-
-.h1 {
-  font-size: 20px;
-  font-family: "Open Sans";
 }
 
 .cta-hero {
@@ -760,12 +750,12 @@ p {
   color: white !important;
 }
 h2 {
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 1.4em;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 0.9375em;
   text-transform: uppercase;
   font-weight: 700;
   color: #333333 !important;
@@ -778,7 +768,9 @@ h3 {
 }
 
 h1 {
-  color: #333333 !important;
+  font-weight: 700;
+  font-size: 1.8em;
+  font-family: "Open Sans";
 }
 
 h4 {
