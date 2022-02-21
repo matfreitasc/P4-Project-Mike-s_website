@@ -831,13 +831,23 @@ h4 {
   color: #ffffff !important;
 }
 
-.btn-atomic-tangerine {
+.btn-atomic-tangerine-contact {
   background-color: #9e3200;
   color: #ffffff !important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine-contact:hover {
   background-color: #bb3b00 !important;
+  color: #ffffff !important;
+}
+
+.btn-atomic-tangerine {
+  background-color: #f3976c;
+  color: #ffffff !important;
+}
+
+.btn-atomic-tangerine:hover {
+  background-color: #c27956 !important;
   color: #ffffff !important;
 }
 
@@ -928,8 +938,8 @@ h4 {
     position: relative;
   }
   .bloc {
-    padding-left: max(12px, env(safe-area-inset-left));
-    padding-right: max(12px, env(safe-area-inset-right));
+    padding-left:env(safe-area-inset-left, 20px);
+    padding-right: env(safe-area-inset-right, 20px);
   }
   .bloc-group,
   .bloc-group .bloc {
@@ -939,8 +949,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: max(12px, env(safe-area-inset-left));
-    padding-right: max(12px, env(safe-area-inset-right));
+    padding-left:env(safe-area-inset-left, 20px);
+    padding-right: env(safe-area-inset-right, 20px);
   }
 }
 
